@@ -1,0 +1,27 @@
+.sidebar{
+    width: 40%;
+
+    border: 1px solid black;
+    float: left;
+
+}
+.content{
+    width: 59%;
+
+    border: 1px solid red;
+    float: right;
+
+}
+
+.fix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.fix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .fix { height: 1%; }
+.fix { display: block; }
